@@ -16,13 +16,13 @@ sealed class GmailItem(
     val isDivider:Boolean = false,
     // Some is a header
     val isHeader:Boolean = false,
-    open val messageCount:Int? = null
+    open val messageCount:String? = null
 ){
     // Creating a inbox type
     class inboxType(
         override val name:String,
         override val icon :ImageVector,
-        override val messageCount: Int? = null
+        override val messageCount: String? = null
     ):GmailItem(
         icon = Icons.Outlined.AllInbox,
         name = name,
